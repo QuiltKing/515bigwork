@@ -1,0 +1,430 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    transition: all 0.5s;
+}
+
+body,
+html {
+    margin: 0px;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.list ul li {
+    height: 15%;
+}
+
+.list ul li ul {
+    width: 100%;
+}
+
+.list ul li ul li {
+    width: 100%;
+    height: 6%;
+}
+
+.mune {
+    display: flex;
+    justify-content: flex-start;
+    height: 100%;
+    font-size: 81.5%
+}
+
+.logo {
+    z-index: 100;
+    background-color: #F39E38;
+    height: 4rem;
+    width: 4.813rem;
+    position: relative;
+    transition: all 1s;
+}
+
+.logo img {
+    position: absolute;
+    top: 30%;
+}
+
+.lv {
+    display: none;
+}
+
+.cheng {
+    display: none;
+}
+
+.hong {
+    display: none;
+}
+
+.lan {
+    display: none;
+}
+
+.lvv {
+    display: none;
+}
+
+.chengg {
+    display: none;
+}
+
+.list ul li p {
+    font-size: 100%;
+    color: #727171;
+}
+
+.list {
+    z-index: 10;
+    width: 4.813rem;
+    height: 100%;
+    bottom: 0rem;
+}
+
+.list ul {
+    height: 100%;
+}
+
+.list img {
+    margin-left: 20%;
+}
+
+.list p {
+    text-align: center;
+}
+
+#home {
+    background-color: #F2F4EC;
+    opacity: 0.45;
+}
+
+#home em {
+    border-bottom: 0.0625rem solid black;
+    padding-top: 1.9rem;
+    display: inline-block;
+    width: 70%;
+}
+
+#about {
+    background-color: white;
+    opacity: 1;
+}
+
+#about em {
+    border-bottom: 0.0625rem solid black;
+    padding-top: 1.125rem;
+    display: inline-block;
+    width: 100%;
+}
+
+#develop {
+    background-color: #F2F4EC;
+    opacity: 0.45;
+}
+
+#develop em {
+    border-bottom: 0.0625rem solid black;
+    padding-top: 1.125rem;
+    display: inline-block;
+    width: 70%;
+}
+
+#news {
+    background-color: #F2F4EC;
+    opacity: 0.45;
+}
+
+#news em {
+    border-bottom: 0.0625rem solid black;
+    padding-top: 1.125rem;
+    display: inline-block;
+    width: 70%;
+}
+
+#product {
+    background-color: #F2F4EC;
+    opacity: 0.45;
+}
+
+#product em {
+    border-bottom: 0.0625rem solid black;
+    padding-top: 1.125rem;
+    display: inline-block;
+    width: 70%;
+}
+
+#notice {
+    background-color: #F2F4EC;
+    opacity: 0.45;
+}
+
+.li1 {
+    display: none;
+    background-color: #F39E38;
+    z-index: 100;
+    width: 6.5625rem;
+    justify-content: center;
+    opacity: 0.7;
+    color: white;
+    position: absolute;
+    left: 75px;
+    height: 100%;
+    top: 0%;
+}
+
+.li1 ul {
+    margin-top: 100%;
+    line-height: 3.125rem;
+}
+
+.li2 {
+    display: none;
+    background-color: #EB6B64;
+    z-index: 100;
+    width: 6.5625rem;
+    justify-content: center;
+    opacity: 0.7;
+    color: white;
+    position: absolute;
+    left: 75px;
+    height: 100%;
+    top: 0%;
+}
+
+.li2 ul {
+    margin-top: 150%;
+    line-height: 3.125rem;
+}
+
+.li3 {
+    display: none;
+    background-color: #71BDE4;
+    z-index: 100;
+    width: 6.5625rem;
+    justify-content: center;
+    opacity: 0.7;
+    color: white;
+    position: absolute;
+    left: 75px;
+    height: 100%;
+    top: 0%;
+}
+
+.li3 ul {
+    margin-top: 180%;
+    line-height: 3.125rem;
+}
+
+.li4 {
+    display: none;
+    background-color: #26A13A;
+    z-index: 1000;
+    width: 6.5625rem;
+    justify-content: center;
+    opacity: 0.7;
+    color: white;
+    position: absolute;
+    left: 75px;
+    height: 100%;
+    top: 0%;
+}
+
+.li4 ul {
+    margin-top: 300%;
+    line-height: 3.125rem;
+}
+
+.about-body {
+    position: absolute;
+    top: 0%;
+    background-image: url(../img/jd.jpg);
+    background-size: 100% 100%;
+    height: 100%;
+    font-size: 1.5625rem;
+    color: white;
+    font-weight: 500;
+    left: 3em;
+    right: 0em;
+}
+
+.about-body .p {
+    width: 37.5rem;
+}
+
+.about-body-pic {
+    display: flex;
+    flex-direction: row;
+}
+
+.pic1 {
+    position: relative;
+    z-index: 2;
+    transition: all 1s;
+}
+
+.picc1 {
+    transition: all 1s;
+}
+
+.color1 {
+    background-color: #F39E38;
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    height: 50%;
+    z-index: 0;
+    transition: all 1s;
+}
+
+.pic2 {
+    position: relative;
+    z-index: 99;
+    transition: all 1s;
+}
+
+.picc2 {
+    transition: all 1s;
+}
+
+.color2 {
+    background-color: #EB6B64;
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    height: 50%;
+    z-index: 0;
+    transition: all 1s;
+}
+
+.pic3 {
+    position: relative;
+    z-index: 99;
+    transition: all 1s;
+}
+
+.picc3 {
+    transition: all 1s;
+}
+
+.color3 {
+    background-color: #71BDE4;
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    height: 50%;
+    z-index: 0;
+    transition: all 1s;
+}
+
+.pic4 {
+    position: relative;
+    z-index: 99;
+    transition: all 1s;
+}
+
+.picc4 {
+    transition: all 1s;
+}
+
+.color4 {
+    background-color: #81C043;
+    position: absolute;
+    top: 50%;
+    width: 25%;
+    height: 50%;
+    z-index: 0;
+    transition: all 1s;
+}
+
+.about-body button {
+    border-color: white;
+    color: white;
+    border-radius: 20%;
+    z-index: 100;
+    margin-top: 70%;
+    margin-left: 30%;
+    width: 7.625rem;
+    height: 2.5rem;
+    border: 0.0625rem solid;
+}
+
+.btn1 {
+    background-color: #F39E38;
+    color: white;
+}
+
+.hf2 button {
+    background-color: #EB6B64;
+}
+
+.hf3 button {
+    background-color: #71BDE4;
+}
+
+.hf4 button {
+    background-color: #81C043;
+}
+
+.about-body-pic img {
+    width: 23.28125rem;
+}
+
+.end ul {
+    display: flex;
+    justify-content: center;
+}
+
+.weibo {
+    margin-right: 2rem;
+    text-align: center;
+}
+
+.end-pic {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(../img/s5bfe0b44eefb4.jpg);
+    background-size: cover;
+    height: 50%;
+    color: #B5B5A6;
+    font-size: 81.5%;
+    line-height: 20px;
+    margin-top: -4%;
+}
+
+.weixin {
+    transition: all 1s;
+}
+
+.weixinpic {
+    position: absolute;
+    top: 105%;
+    left: 55%;
+    opacity: 0;
+    transition: all 1s;
+    width: 148px;
+    height: 156px;
+}
+
+.weixin1 {
+    display: none;
+    text-align: center;
+}
+
+.weibo1 {
+    display: none;
+    text-align: center;
+}
