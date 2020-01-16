@@ -616,7 +616,7 @@ butR.onclick = function() {
 
         index++;
         //判断数字是否等于图片的总数量
-        if (index == li.length) {
+        if (index == 6) {
 
             index = 0;
         };
@@ -651,7 +651,7 @@ butL.onclick = function() {
 
         if (index < 0) {
 
-            index = li.length - 1
+            index = 6 - 1
         };
         //向上移动
         box.style.top = -index * liHeight + "px";
@@ -802,7 +802,7 @@ function scrollFunc() { //滑轮翻页
 
                 if (index < 0) {
 
-                    index = li.length - 1
+                    index = 6 - 1
                 };
                 //向上移动
                 box.style.top = -index * liHeight + "px";
@@ -830,7 +830,7 @@ function scrollFunc() { //滑轮翻页
 
                 index++;
                 //判断数字是否等于图片的总数量
-                if (index == li.length) {
+                if (index == 6) {
 
                     index = 0;
                 };
@@ -863,7 +863,7 @@ function scrollFunc() { //滑轮翻页
 
                 if (index < 0) {
 
-                    index = li.length - 1
+                    index = 6 - 1
                 };
                 //向上移动
                 box.style.top = -index * liHeight + "px";
@@ -891,7 +891,7 @@ function scrollFunc() { //滑轮翻页
 
                 index++;
                 //判断数字是否等于图片的总数量
-                if (index == li.length) {
+                if (index == 6) {
 
                     index = 0;
                 };
