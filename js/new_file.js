@@ -789,19 +789,21 @@ if (document.addEventListener) { //Firefox
     document.addEventListener('DOMMouseScroll', scrollFunc, false);
 }
 document.onmousewheel = scrollFunc; //IE/Opera/Chrome
-//鼠标滑轮监听事件有点迷，网上找的
+//鼠标滑轮监听事件有点迷，不知道为什么火狐和谷歌效果完全相反，不同浏览器效果不同。。。
+var dotbox = document.getElementsByClassName("dotBox");
+
 function scrollFunc() { //滑轮翻页
     var e = window.event;
     if (e.wheelDelta) { //IE/Opera/Chrome/搜狗
         if (e.wheelDelta > 0) {
+            var dotbox = document.getElementsByClassName("dotBox")[0];
             if (flag) {
                 //更改flag为false
                 flag = false;
-
+                dotbox.style.opacity = 1;
                 index--;
-
                 if (index < 0) {
-
+                    dotbox.style.opacity = 0;
                     index = 6 - 1
                 };
                 //向上移动
@@ -822,17 +824,20 @@ function scrollFunc() { //滑轮翻页
                     //改变flag为true
                     flag = true;
                 }, 500);
+
             };
+
         } else {
+            var dotbox = document.getElementsByClassName("dotBox")[0];
             if (flag) {
                 //更改flag为false
                 flag = false;
-
+                dotbox.style.opacity = 1;
                 index++;
                 //判断数字是否等于图片的总数量
                 if (index == 6) {
-
                     index = 0;
+                    dotbox.style.opacity = 0;
                 };
                 //向下移动
                 box.style.top = -index * liHeight + "px";
@@ -851,21 +856,24 @@ function scrollFunc() { //滑轮翻页
                     //改变flag为true
                     flag = true;
                 }, 500)
+
             };
         }
     } else if (e.detail) { //Firefox
         if (e.detail > 0) {
+            var dotbox = document.getElementsByClassName("dotBox")[0];
             if (flag) {
                 //更改flag为false
                 flag = false;
-
+                dotbox.style.opacity = 1;
                 index--;
 
                 if (index < 0) {
-
-                    index = 6 - 1
+                    index = 6 - 1;
+                    dotbox.style.opacity = 0;
                 };
                 //向上移动
+
                 box.style.top = -index * liHeight + "px";
                 //查找小圆点下标位置
                 for (var i = 0; i < dot.length; i++) {
@@ -883,18 +891,23 @@ function scrollFunc() { //滑轮翻页
                     //改变flag为true
                     flag = true;
                 }, 500);
+
             };
         } else {
+            var dotbox = document.getElementsByClassName("dotBox")[0];
             if (flag) {
                 //更改flag为false
                 flag = false;
-
+                dotbox.style.opacity = 1;
                 index++;
                 //判断数字是否等于图片的总数量
                 if (index == 6) {
-
+                    dotbox.style.opacity = 0;
                     index = 0;
                 };
+
+
+
                 //向下移动
                 box.style.top = -index * liHeight + "px";
                 //查找小圆点下标位置
@@ -911,7 +924,8 @@ function scrollFunc() { //滑轮翻页
                 setTimeout(function() {
                     //改变flag为true
                     flag = true;
-                }, 500)
+                }, 500);
+
             };
         }
     }
