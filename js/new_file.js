@@ -794,15 +794,125 @@ function scrollFunc() { //滑轮翻页
     var e = window.event;
     if (e.wheelDelta) { //IE/Opera/Chrome/搜狗
         if (e.wheelDelta > 0) {
-            butR.onclick
+            if (flag) {
+                //更改flag为false
+                flag = false;
+
+                index--;
+
+                if (index < 0) {
+
+                    index = li.length - 1
+                };
+                //向上移动
+                box.style.top = -index * liHeight + "px";
+                //查找小圆点下标位置
+                for (var i = 0; i < dot.length; i++) {
+                    //判断小圆点的下标位置是否与数字相同
+                    if (i == index) {
+                        dot[index].id = "dotIs";
+
+                    } else {
+
+                        dot[i].id = "";
+                    };
+                };
+                //这个还是定时器
+                setTimeout(function() {
+                    //改变flag为true
+                    flag = true;
+                }, 500);
+            };
         } else {
-            butR.onclick
+            if (flag) {
+                //更改flag为false
+                flag = false;
+
+                index++;
+                //判断数字是否等于图片的总数量
+                if (index == li.length) {
+
+                    index = 0;
+                };
+                //向下移动
+                box.style.top = -index * liHeight + "px";
+                //查找小圆点下标位置
+                for (var i = 0; i < dot.length; i++) {
+                    //判断小圆点的下标位置是否与数字相同
+                    if (i == index) {
+                        dot[index].id = "dotIs";
+                    } else {
+
+                        dot[i].id = "";
+                    };
+                };
+                //定时器
+                setTimeout(function() {
+                    //改变flag为true
+                    flag = true;
+                }, 500)
+            };
         }
     } else if (e.detail) { //Firefox
         if (e.detail > 0) {
-            butR.onclick
+            if (flag) {
+                //更改flag为false
+                flag = false;
+
+                index--;
+
+                if (index < 0) {
+
+                    index = li.length - 1
+                };
+                //向上移动
+                box.style.top = -index * liHeight + "px";
+                //查找小圆点下标位置
+                for (var i = 0; i < dot.length; i++) {
+                    //判断小圆点的下标位置是否与数字相同
+                    if (i == index) {
+                        dot[index].id = "dotIs";
+
+                    } else {
+
+                        dot[i].id = "";
+                    };
+                };
+                //这个还是定时器
+                setTimeout(function() {
+                    //改变flag为true
+                    flag = true;
+                }, 500);
+            };
         } else {
-            butR.onclick
+            if (flag) {
+                //更改flag为false
+                flag = false;
+
+                index++;
+                //判断数字是否等于图片的总数量
+                if (index == li.length) {
+
+                    index = 0;
+                };
+                //向下移动
+                box.style.top = -index * liHeight + "px";
+                //查找小圆点下标位置
+                for (var i = 0; i < dot.length; i++) {
+                    //判断小圆点的下标位置是否与数字相同
+                    if (i == index) {
+                        dot[index].id = "dotIs";
+                    } else {
+
+                        dot[i].id = "";
+                    };
+                };
+                //定时器
+                setTimeout(function() {
+                    //改变flag为true
+                    flag = true;
+                }, 500)
+            };
         }
     }
 }
